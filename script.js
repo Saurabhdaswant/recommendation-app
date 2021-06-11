@@ -8,7 +8,10 @@ const recomendationTwo = document.querySelector(".recomendation--two");
 //processing
 function showCoding() {
   recomendationOne.textContent = "CodeWithHarry";
+  recomendationOne.href =
+    "https://www.youtube.com/channel/UCeVMnSShP_Iviwkknt83cww";
   recomendationTwo.textContent = "tanay pratap";
+  recomendationTwo.href = "https://www.youtube.com/c/TanayPratap/featured";
 }
 function showMotivation() {
   recomendationOne.textContent = "beerBiceps";
