@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap");
+
+/*! general styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+  color: #001833;
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #00c7ff,
+    #00b4ff,
+    #00a0ff,
+    #008afc,
+    #0071f2
+  );
+  height: 100vh;
+}
+
+/* heading */
+.heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+/*  title */
+.heading_sub--heading {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* subtitle */
+.heading_sub--heading_subtitle {
+  font-size: 20px;
+}
+
+/*! container styling */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.container_center {
+  padding: 0 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* button / links */
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.cta {
+  padding: 0.5rem;
+  width: 10rem;
+  border-radius: 5px;
+  border: none;
+  background: #68e1fd;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background: #65d8f1;
+  transition: 0.5s;
+}
+
+/* recomendation section */
+
+.recomendation {
+  display: block;
+  padding: 1rem;
+  border: 5px #001833b9 solid;
+  border-radius: 10px;
+}
+
+@media (max-width: 450px) {
+  .heading {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  /*  title */
+  .heading_sub--heading {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  /* subtitle */
+  .heading_sub--heading_subtitle {
+    font-size: 16px;
+  }
+
+  .buttons {
+    justify-content: space-evenly;
+  }
+
+  .cta {
+    padding: 0.2rem;
+    border-radius: 5px;
+  }
+}
